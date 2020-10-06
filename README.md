@@ -6,7 +6,7 @@ https://www.kaggle.com/blastchar/telco-customer-churn
 
 Telco Customer Churn - Focused customer retention programs Summary
 
-Problem Scenario
+## Problem Scenario
 
 Customer churn, also known as customer attrition, is the loss of clients or customers.
 Voluntary churn occurs due to a decision made by the customer to switch to another company or service provider.  Companies tend to concentrate on voluntary churn, because it typically occurs due to factors that companies can control like company-customer relationship, how billing interactions are handled or how after-sales help is provided.
@@ -16,21 +16,26 @@ Churn is one of the biggest problems in the telecom industry. Research has shown
 
 The main goal of this project is to create a model to predict the behavior of customers. The model should be able to identify the customers who have a high probability of leaving and help devise suitable customer retention programs. 
 
-Data Analysis
+## Data Analysis
 
 We use Telco Customer Churn dataset from the UCI repository for churn prediction. 
 Each row in the dataset represents a customer record. There are 7043 customers in the dataset and 19 features without customerID (non-informative) and Churn column (target variable). Most of the categorical features have 4 or fewer unique values. 
 
 The information included in the dataset:
 
-Input: 
+### Input: 
+
 ●	Services that each customer has signed up for like phone, multiple lines, internet, online security, online backup, device protection, tech support, streaming TV and movies
+
 ●	Customer account information like tenure, contract, payment method, paperless billing, monthly charges, and total charges
+
 ●	Demographic info about customers include gender, age range, and if they have partners and dependents 
-Output:
+
+### Output:
+
 ●	Churn column, which indicates whether a customer has left within the last month
 
-Methodology
+## Methodology
 
 We chose a decision tree to model churned and not churned customers, because of its interpretability. The decision tree will identify segments of customers with similar likelihood of churning based on the features available in the data set. The decision tree will also rank features by importance in predicting churning within each segment. The segments will be a useful basis for devising a customer retention plan.
 
